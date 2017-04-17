@@ -1,0 +1,29 @@
+<ion-side-menus>
+	<!--Este  sera el  menu-->
+	<ion-side-menu side="left">
+    	<ion-header-bar class="bar-positive">
+    		<h1 class="title">Menu</h1>
+    	</ion-header-bar>
+		<ion-content>
+        	<ion-list>
+  				<ion-item ui-sref="app.about" menu-close >
+  				About
+  				</ion-item>
+  				<ion-item ui-sref="app.restaurante" menu-close>
+  				Menu de platillos
+  				</ion-item>
+        	</ion-list>
+		</ion-content>	
+	</ion-side-menu>
+	<!--Este  sera  el contenido-->
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<!--Contenido-->
+		<ion-nav-view name="content"></ion-nav-view>
+	</ion-side-menu-content>
+</ion-side-menus>
